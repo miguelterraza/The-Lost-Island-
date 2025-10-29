@@ -1,0 +1,56 @@
+body {
+    background-color:#1a4470;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    border: 2px solid #408b56;
+    padding: 20px;
+    background-color: #1a3b2d;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#game-canvas {
+    width: 600px;
+    height: 400px;
+    background-image: url('fotos/bosque.jpg'); 
+    background-size: cover;
+    border: 1px solid #1a4470;
+    position: relative;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#story-box {
+    background-color: #1a3b2d;
+    border: 1px solid #0d1a2b;
+    padding: 15px;
+    min-height: 80px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.player {
+    width: 40px;
+    height: 40px;
+    background-image: url('fotos/indo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: left 0.1s linear, top 0.1s linear;
+}
+
+.obstacle {
+    width: 50px;
+    height: 50px;
+    background-image: url('fotos/peligro.png'); 
+    background-size: cover;
+    position: absolute;
+}
